@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
   get 'playlists/index'
 
   devise_for :users, controllers: {registrations:"users/registrations"}
